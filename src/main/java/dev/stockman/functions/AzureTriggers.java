@@ -30,8 +30,6 @@ public class AzureTriggers extends FunctionInvoker<String, String> {
             HttpRequestMessage<String> request,
             final ExecutionContext context) {
 
-        context.getLogger().info("1.0 Testing attempt");
-
         return request.createResponseBuilder(HttpStatus.OK)
                 .body(handleRequest(context))
                 .header("Content-Type", "application/json")
@@ -46,6 +44,6 @@ public class AzureTriggers extends FunctionInvoker<String, String> {
 
         handleRequest(request.getBody(), context);
 
-        return request.createResponseBuilder(HttpStatus.NO_CONTENT).build();
+        return request.createResponseBuilder(HttpStatus.ACCEPTED).build();
     }
 }
