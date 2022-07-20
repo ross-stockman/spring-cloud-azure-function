@@ -1,0 +1,15 @@
+POST http://localhost:7071/api/hello
+Content-Type: text/plain
+
+Kilroy
+
+###
+
+GET  http://localhost:7071/api/time
+
+###
+
+POST http://localhost:7071/api/publish
+Content-Type: text/plain
+
+foobar

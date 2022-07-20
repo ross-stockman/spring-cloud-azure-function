@@ -1,0 +1,15 @@
+POST http://localhost:8080/hello
+Content-Type: text/plain
+
+Kilroy
+
+###
+
+GET  http://localhost:8080/time
+
+###
+
+POST http://localhost:8080/publish
+Content-Type: text/plain
+
+foobar
