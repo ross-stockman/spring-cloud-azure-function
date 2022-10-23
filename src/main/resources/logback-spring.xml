@@ -10,7 +10,7 @@
         <appender-ref ref="STDOUT" />
     </root>
 
-    <logger name="com.optum" level="debug" additivity="false">
+    <logger name="dev.stockman" level="debug" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
 
