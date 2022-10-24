@@ -13,7 +13,7 @@ class AzureTriggersTest {
 
     private static final Logger LOGGER = Logger.getLogger(AzureTriggersTest.class.getName());
 
-    private final FunctionInvoker<String, String> systemUnderTest = new FunctionInvoker<>(ServerlessFunctions.class);
+    private final FunctionInvoker<String, String> systemUnderTest = new FunctionInvoker<>(MainApplication.class);
 
     @Test
     void hello() {

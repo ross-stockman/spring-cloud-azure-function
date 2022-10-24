@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import reactor.core.publisher.Mono;
 
-import java.time.LocalTime;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
